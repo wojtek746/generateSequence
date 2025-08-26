@@ -4,7 +4,7 @@ def main():
     n = int(input("Enter how many numbers the sequence should have: "))
     numbers = []
     for i in range(1, n+1):
-        numbers.append(Fraction(input(f"Enter a{i}:")))
+        numbers.append(Fraction(input(f"Write a{i}:")))
 
     factors = [Fraction(0)] * n
     for i in range(n):
