@@ -1,7 +1,19 @@
 from fractions import Fraction
 
+def fibonacci(n):
+    numbers = []
+    if n > 0:
+        numbers.append(1)
+    if n > 1:
+        numbers.append(1)
+    if n > 2:
+        for i in range(2, n+1):
+            numbers.append(numbers[i-1] + numbers[i-2])
+    return numbers
+
 def main():
     n = int(input("Enter how many numbers the sequence should have: "))
+    #numbers = fibbonaci(n)
     numbers = []
     for i in range(1, n+1):
         numbers.append(Fraction(input(f"Write a{i}:")))
