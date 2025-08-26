@@ -13,7 +13,7 @@ def fibonacci(n):
 
 def main():
     n = int(input("Enter how many numbers the sequence should have: "))
-    #numbers = fibbonaci(n)
+    #numbers = fibonacci(n)
     numbers = []
     for i in range(1, n+1):
         numbers.append(Fraction(input(f"Write a{i}:")))
